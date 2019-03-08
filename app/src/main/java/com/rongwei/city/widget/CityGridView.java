@@ -6,10 +6,11 @@ import android.view.View;
 import android.widget.GridView;
 
 /**
- * 自定义的网格布局
- * */
+ * 解决嵌套只显示一行的bug
+ */
 
 public class CityGridView extends GridView {
+
     public CityGridView(Context context, AttributeSet attrs) {
         super(context, attrs);
     }

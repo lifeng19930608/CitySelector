@@ -28,8 +28,8 @@ public class MainActivity extends Activity {
     }
 
     private void initView(){
-        button= (Button) findViewById(R.id.button);
-        textView= (TextView) findViewById(R.id.textView);
+        button= findViewById(R.id.button);
+        textView= findViewById(R.id.textView);
     }
 
 

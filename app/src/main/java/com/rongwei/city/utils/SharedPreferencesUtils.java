@@ -9,15 +9,15 @@ import android.preference.PreferenceManager;
 
 public class SharedPreferencesUtils {
 
-	/**
-	 * 保存用户选择的城市
-	 */
-	public static void saveCityName(Context context, String cityName) {
-		PreferenceManager.getDefaultSharedPreferences(context).edit().putString("cityName", cityName).commit();
-	}
+    /**
+     * 保存用户选择的城市
+     */
+    public static void saveCityName(Context context, String cityName) {
+        PreferenceManager.getDefaultSharedPreferences(context).edit().putString("cityName", cityName).apply();
+    }
 
-	public static String getCityName(Context context) {
-		return PreferenceManager.getDefaultSharedPreferences(context).getString("cityName", "北京");
-	}
+    public static String getCityName(Context context) {
+        return PreferenceManager.getDefaultSharedPreferences(context).getString("cityName", "北京");
+    }
 
 }

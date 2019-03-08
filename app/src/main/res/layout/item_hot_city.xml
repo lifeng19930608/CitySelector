@@ -2,13 +2,15 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical" >
-    <TextView 
-        android:id="@+id/cityname"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/cityName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
+        android:background="@drawable/gridview_item_change"
         android:gravity="center"
-        android:textSize="16sp"
-        android:background="@drawable/gridview_item_change" />
+        android:textSize="16sp" />
+
 </LinearLayout>
